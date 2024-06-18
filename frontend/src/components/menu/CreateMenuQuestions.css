@@ -1,0 +1,38 @@
+.create-menu-container {
+    z-index: 1; /* Устанавливаем меньший z-index для основного контента */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Содержимое начинается с самого верха */
+    min-height: calc(100vh - 160px); /* Минимальная высота контента */
+}
+
+.question-card {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.question-card h3 {
+    margin-bottom: 20px;
+}
+
+.question-card div {
+    margin-bottom: 10px;
+}
+
+.question-card label {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.question-card input[type="radio"] {
+    display: none; /* Скрываем кружочки */
+}
+
+.question-card label:hover {
+    background-color: #CDEBA7; /* Фон текста при наведении мыши */
+}
+
+

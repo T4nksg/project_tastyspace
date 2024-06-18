@@ -1,0 +1,21 @@
+.new-recipe-card {
+    padding: 2em;
+    width: 750px;
+  }
+
+  .new-recipe-card:hover {
+    background-color: #CDEBA7;
+    border-color: #AFCF75;
+  }
+  
+  .new-recipe-card .read-the-docs {
+    color: #888;
+  }
+  
+  .new-recipe-card .recipe-image {
+    width: 200px;  
+    height: auto; 
+    object-fit: contain; 
+    border-radius: 8px;
+    margin: 15px;
+  } 

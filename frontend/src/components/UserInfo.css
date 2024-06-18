@@ -1,0 +1,78 @@
+.user-info-card {
+    padding: 20px;
+    background-color: white;
+    min-width: 300px;
+  }
+  
+  .user-info-row,
+  .user-info-edit-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .user-info-input,
+  .user-info-auth-button,
+  .user-info-link-button {
+    max-width: 200px;
+    padding: 5px 13px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  .user-info-input {
+    border: 1px solid #ccc;
+    flex-grow: 1; /* Поле ввода будет занимать больше места */
+  }
+  
+  .user-info-auth-button {
+    border: none;
+    color: white;
+    background-color: #556B2F;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+  }
+  
+  .user-info-auth-button:hover {
+    background-color: #77B300;
+  }
+  
+  .user-info-link-button {
+    border: none;
+    color: black;
+    background-color: rgb(180, 180, 180);
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 5px 10px;
+  }
+  
+  .user-info-link-button:hover {
+    background-color: rgb(226, 225, 225);
+  }
+  
+  .user-info-eye-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: black;
+    padding: 0;
+    margin-left: 10px;
+  }
+  
+  .user-info-eye-button:hover {
+    color: black;
+  }
+  
+  .user-info-error-message {
+    color: #CC3700;
+    font-size: 12px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  

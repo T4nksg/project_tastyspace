@@ -1,0 +1,59 @@
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .auth-input, .auth-button, .link-button {
+    width: 100%;
+    max-width: 300px; /* Уменьшенная ширина для всех полей и кнопок */
+    padding: 10px;
+    margin-bottom: 10px; /* Отступ между элементами */
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  .auth-input {
+    border: 1px solid #ccc;
+  }
+  
+  .auth-button {
+    border: none;
+    color: white;
+    background-color: #556B2F;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .auth-button:hover {
+    background-color: #77B300;
+  }
+  
+  .link-button {
+    border: none;
+    color: black;
+    background-color: rgb(180, 180, 180);
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .link-button:hover {
+    background-color: rgb(226, 225, 225);
+  }
+  
+  /* Новый стиль для уменьшенного модального окна */
+  .modal-dialog {
+    max-width: 350px; /* Уменьшенная ширина модального окна */
+  }
+
+  .error-message {
+    color: #CC3700;
+    font-size: 12px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  

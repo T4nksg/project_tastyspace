@@ -1,0 +1,13 @@
+/* MenuDisplay.css */
+.modal-90w {
+    max-width: 900px !important;
+}
+
+.custom-modal-body {
+    padding: 0 !important; /* Убираем внутренние отступы */
+}
+
+.recipe-details {
+    width: 100% !important; 
+    max-width: 900px !important;
+}

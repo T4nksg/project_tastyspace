@@ -1,0 +1,115 @@
+.moderation-form-control {
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+}
+
+.moderation-form-control:focus {
+    border-color: #CDEBA7 !important; 
+    box-shadow: 0 0 0 0.2rem rgba(205, 235, 167, 0.25) !important; 
+}
+
+.btn-moderation-primary {
+    color: white;
+    background-color: #556B2F; 
+    border: none; 
+}
+
+.btn-moderation-primary:hover {
+    color: white;
+    background-color: #77B300; 
+}
+
+.error-moderation-message {
+    color: #CC3700;
+    font-size: 12px;
+    margin-top: 5px; 
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.moderation-image {
+    width: 250px;
+    margin-left: 20px;
+    border-radius: 8px;
+}
+
+.moderation-description {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 150px; 
+}
+
+.moderation-card {
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.moderation-card.narrow {
+    width: 210px; /* Более узкие карточки для первого ряда */
+}
+
+.moderation-card.wide {
+    width: 280px; /* Более широкие карточки для второго ряда */
+}
+
+.moderation-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 900px;
+    margin: 0 auto; /* Центрирование контейнера */
+}
+
+.moderation-card-container .moderation-card {
+    margin-bottom: 20px;
+}
+
+.moderation-card h4 {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+}
+
+.moderation-card:hover {
+    border-color: #AFCF75;
+}
+
+.moderation-card small {
+    display: block;
+    margin-bottom: 5px;
+    color: #777;
+}
+
+.moderation-card label {
+    display: block; /* Изменяем display для отображения опций в столбик */
+    margin: 1px 0;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.moderation-card label span {
+    display: inline-block; /* Изменяем display для корректного отображения текста */
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.moderation-card label input {
+    display: none;
+}
+
+.moderation-card label:hover span {
+    background-color: #CDEBA7;
+}
+
+.moderation-card label.selected span {
+    color: #556B2F;
+    background-color: #CDEBA7;
+}
+
+.moderation-card label input:checked + span {
+    background-color: #CDEBA7;
+}

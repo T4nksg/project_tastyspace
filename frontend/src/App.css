@@ -1,0 +1,204 @@
+/* App.css */
+
+.App {
+  display: flex;
+  flex-direction: column; /* Убедитесь, что flex-direction установлено в column */
+  min-height: 100vh; /* Убедитесь, что высота контейнера занимает всю высоту окна */
+}
+
+
+.App-header {
+  width: calc(100% - 200px); /* Учитываем ширину сайд-бара */
+  padding: 6px 10px;
+  background-color: #fff; /* Белый фон */
+  display: flex;
+  justify-content: space-between; /* Логотип слева, кнопка справа */
+  align-items: center; /* Центрирование по вертикали */
+  position: fixed; /* Фиксируем header */
+  top: 0;
+  left: 200px; /* Фиксируем после сайд-бара */
+  z-index: 1000; /* Устанавливаем больший z-index для хедера */
+  border-bottom: 1px solid #ddd; /* Тонкая черточка снизу */
+}
+
+.App-logo {
+  width: 350px;
+  height: auto;
+  cursor: pointer;
+}
+
+.App-header-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.App-header-buttons .btn {
+  color: black;
+  background-color: transparent;
+  border: 2px solid white;
+  outline: none;
+  padding: 5px 10px;
+  position: relative;
+}
+
+.App-header-buttons .btn:hover {
+  border: 2px solid white;
+}
+
+.App-header-buttons .btn:hover .hover-effect {
+  color: #EF741B;
+  text-decoration: underline;
+}
+
+.App-header-buttons .btn:active, 
+.App-header-buttons .btn:focus {
+  color: #555; /* Сохраняем темно-серый цвет текста */
+  background-color: transparent; /* Убираем фон */
+  border: 2px solid white; /* Сохраняем белую границу */
+}
+
+.App-header-buttons .hover-effect {
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.user-icon {
+  color: #555;
+  font-size: 0.8em; /* Уменьшаем размер иконки */
+  /* margin-right: 1px; */
+  vertical-align: middle; /* Выровняем иконку по середине текста */
+  margin-bottom: 0.3em;
+}
+
+.user-name {
+  color: #555;
+  font-style: italic; /* Имя курсивом */
+}
+
+
+.App-sidebar {
+  width: 200px;
+  background-color: #556B2F;
+  color: white;
+  padding: 20px;
+  height: 100vh; /* Сайд-бар занимает всю высоту экрана */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.App-nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3px; /* Отступ сверху для размещения под header */
+}
+
+.App-nav-item {
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.App-nav-item:hover {
+  color: #FF7F50;
+}
+
+.App-action-bar {
+  width: calc(100% - 200px); /* Учитываем новую ширину сайд-бара */
+  background-color: white;/* Цвет фона для строки с кнопками действий */
+  padding: 0 10px; /* Убираем вертикальные отступы, оставляем только горизонтальные */
+  height: 44px; /* Явная высота строки с кнопками действий */
+  position: fixed; /* Фиксируем строку с кнопками действий */
+  top: 110px; /* Увеличиваем отступ сверху, чтобы строка была под хедером */
+  left: 200px; /* Фиксируем после сайд-бара */
+  z-index: 999; /* Устанавливаем z-index для строки с кнопками действий */
+  display: flex; /* Используем flexbox для выравнивания элементов */
+  align-items: center; /* Центрирование кнопок по вертикали */
+  justify-content: flex-end; /* Выравнивание кнопок по правому краю */
+  border-bottom: 1px solid #ddd; /* Тонкая черточка снизу */
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.action-button {
+  color: #77B300; /* Изменяем цвет текста */
+  background-color: transparent;
+  border: none; /* Убираем обводку */
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px; /* Промежуток между кнопками */
+  padding: 5px 10px; /* Добавление внутреннего отступа для кнопок */
+  font-weight: normal; /* Убираем выделение жирным */
+}
+
+.action-button:last-child {
+  margin-right: 0;
+}
+
+.action-button:hover {
+  color: #556B2F;
+  background-color: #CDEBA7;
+}
+
+.App-content-wrapper {
+  margin-left: 200px; /* Отступ для сайд-бара */
+  padding-top: 170px; /* Отступ сверху для размещения под header */
+  z-index: 1; /* Устанавливаем меньший z-index для основного контента */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; /* Центрирование содержимого по горизонтали */
+  min-height: calc(100vh - 170px); /* Минимальная высота контента */
+  width: calc(100% - 200px); /* Учитываем ширину сайд-бара */
+  box-sizing: border-box; /* Добавляем box-sizing для корректного учета padding и width */
+}
+
+.App-content-wrapper.no-action-bar {
+  padding-top: 126px; /* Учитываем отступ сверху при отсутствии панели действий */
+  min-height: calc(100vh - 126px); /* Учитываем высоту при отсутствии панели действий */
+}
+
+.App-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрирование содержимого по горизонтали */
+  width: 100%;
+}
+
+
+
+/* Убедимся, что все модальные окна и основные контейнеры тоже имеют достаточный отступ сверху */
+.modal-90w {
+  max-width: 900px;
+}
+
+.custom-modal-body {
+  padding: 0; 
+}
+
+.recipe-details {
+  width: 100%; 
+  max-width: 900px;
+}
+
+.common-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.common-header {
+  margin-bottom: 15px; 
+}
+
+
+/* .menu-display-container {
+  align-items: flex-start;
+} */

@@ -1,0 +1,87 @@
+.form-control {
+    border: 1px solid #ccc; /* Стандартный светло-серый цвет */
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border-color: #CDEBA7; /* Зеленый цвет в фокусе */
+    box-shadow: 0 0 0 0.2rem rgba(205, 235, 167, 0.25); /* Тень при фокусе */
+}
+
+/* Стили для самого select */
+.custom-select {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 100px;
+    appearance: none;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    color: #000;
+}
+
+.custom-select:focus {
+    border-color: #CDEBA7 !important;
+    box-shadow: 0 0 0 0.2rem rgba(205, 235, 167, 0.25) !important;
+}
+
+/* Стили для опций */
+.custom-select option {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+.custom-select option:hover {
+    background-color: #556B2F !important;
+    color: white !important;
+}
+
+/* Стили для выделенной опции */
+.custom-select option:checked {
+    background-color: #556B2F !important;
+    color: white !important;
+}
+
+.btn-recipe-primary {
+    color: white;
+    background-color: #556B2F; 
+    border: none; 
+}
+
+.btn-recipe-primary:hover {
+    color: white;
+    background-color: #77B300
+}
+
+.btn-recipe-secondary {
+    border: none;
+    color: black;
+    background-color: rgb(180, 180, 180);
+}
+
+.btn-recipe-secondary:hover {
+    background-color: rgb(226, 225, 225);/
+}
+
+.error-recipe-message {
+    color: #CC3700;
+    font-size: 12px;
+    margin-top: 5px; /* Добавляем отступ сверху */
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.modal-body {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.modal-body p {
+    margin-bottom: 20px;
+}
+
+.modal-body .btn {
+    width: 100px;
+    margin: 0 auto;
+}

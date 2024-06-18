@@ -1,0 +1,29 @@
+.btn-save-primary {
+    color: white;
+    background-color: #556B2F; 
+    border: none; 
+}
+
+.btn-save-primary:hover {
+    color: white;
+    background-color: #77B300
+}
+
+.btn-save-secondary {
+    border: none;
+    color: black;
+    background-color: rgb(180, 180, 180);
+}
+
+.btn-save-secondary:hover {
+    color: black;
+    background-color: rgb(226, 225, 225);/
+}
+
+.saved-menus-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: flex-start;
+  }
